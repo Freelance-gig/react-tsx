@@ -5,14 +5,21 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
+    'prettier',
+    'airbnb',
+    'plugin:react/recommended',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'build/', 'node_modules/'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],
   rules: {
+    "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
     ],
+    'no-shadow': 'off',
+    'comma-dangle': 'off',
+    quotes: 'off',
   },
-}
+};
