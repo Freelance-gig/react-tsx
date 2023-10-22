@@ -8,6 +8,7 @@ module.exports = {
     'prettier',
     'airbnb',
     'plugin:react/recommended',
+    
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs', 'build/', 'node_modules/'],
   parser: '@typescript-eslint/parser',
@@ -21,5 +22,8 @@ module.exports = {
     'no-shadow': 'off',
     'comma-dangle': 'off',
     quotes: 'off',
+    "react/react-in-jsx-scope": "off",
+    'import/prefer-default-export': 'off',
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
   },
 };

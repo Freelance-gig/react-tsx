@@ -1,7 +1,5 @@
-import React from 'react';
-
 function Home() {
-  return <h1>Vite + Rdeact</h1>;
+  return <h1 className="bg-red">Vite + Rdeact</h1>;
 }
 
 export default Home;
