@@ -1,19 +1,60 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './pages/Home.tsx';
-import Dashboard from './pages/Dashboard.tsx';
-import Login from './pages/Login.tsx';
+import {
+  ErrorPage,
+  Home,
+  Login,
+  Users,
+  Adverts,
+  Admin,
+  Community,
+  SiteSetting,
+  StaticPage,
+  SeoSetting,
+} from './pages';
+import DashboardLayout from './components/Layout/DashboardLayout';
 import './index.css';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
-  },
-  {
-    path: '/dashboard',
-    element: <Dashboard />,
+    errorElement: <ErrorPage />,
+    element: <DashboardLayout />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path: '/admin',
+        element: <Admin />,
+      },
+      {
+        path: '/users',
+        element: <Users />,
+      },
+      {
+        path: '/adverts',
+        element: <Adverts />,
+      },
+      {
+        path: '/community',
+        element: <Community />,
+      },
+      {
+        path: '/site-settings',
+        element: <SiteSetting />,
+      },
+      {
+        path: '/static-pages',
+        element: <StaticPage />,
+      },
+      {
+        path: '/seo-settings',
+        element: <SeoSetting />,
+      },
+    ],
   },
   {
     path: '/login',

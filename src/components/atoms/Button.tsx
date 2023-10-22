@@ -1,5 +1,5 @@
-function Button() {
-  return <button type="button"> </button>;
-}
+import { FC } from 'react';
+
+const Button: FC = () => <button type="button"> </button>;
 
 export default Button;
