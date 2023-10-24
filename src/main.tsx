@@ -47,7 +47,7 @@ const router = createBrowserRouter([
         element: <SiteSetting />,
       },
       {
-        path: '/static-pages',
+        path: '/static-page',
         element: <StaticPage />,
       },
       {
