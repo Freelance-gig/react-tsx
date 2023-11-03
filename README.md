@@ -4,4 +4,8 @@ Resources
 
 - [Live Link](https://campus-hub-mu.vercel.app/)
 
-- [Gi]
+- [Github URL](https://github.com/campushub-ng/campus-hub/)
+
+
+Tools Used
+- Vite PWA

@@ -14,7 +14,7 @@ const config = mergeConfig(
     },
     resolve: {
       alias: [{ find: '@', replacement: resolve(__dirname, './src') }],
-    },
+    }
   }),
 );
 
