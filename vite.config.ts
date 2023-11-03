@@ -6,13 +6,13 @@ const manifestForPlugin: Partial<VitePWAOptions> = {
   registerType: "autoUpdate",
   manifest: {
     name: "The name of your application",
+    theme_color: "#317EFB",
     short_name: "This name will show in your Windows taskbar, in the start menu, and Android homescreen",
     start_url: "The URL that should be loaded when your application is opened",
     display: "standalone",
     description: "A description for your application",
     lang: " The default language of your application",
     dir: "ltr",
-    theme_color: "#000000",
     background_color: "#000000",
     orientation: "any",
     icons: [
