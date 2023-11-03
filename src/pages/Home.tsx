@@ -1,9 +1,5 @@
-const Home = () => {
-  return (
-    <>
-      <h1>Vite + React</h1>
-    </>
-  )
-}
+import { FC } from 'react';
 
-export default Home
+const Home: FC = () => <h1 className="bg-red">Dashboard</h1>;
+
+export default Home;
