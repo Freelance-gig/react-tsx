@@ -2,16 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import {
-  ErrorPage,
-  Home,
-  Login,
-  Users,
-  Adverts,
-  Admin,
-  Community,
-  SiteSetting,
-  StaticPage,
-  SeoSetting,
+  ErrorPage, Home, Login, Users, Admin,
 } from './pages';
 import DashboardLayout from './components/Layout/DashboardLayout';
 import './index.css';
@@ -33,26 +24,6 @@ const router = createBrowserRouter([
       {
         path: '/users',
         element: <Users />,
-      },
-      {
-        path: '/adverts',
-        element: <Adverts />,
-      },
-      {
-        path: '/community',
-        element: <Community />,
-      },
-      {
-        path: '/site-settings',
-        element: <SiteSetting />,
-      },
-      {
-        path: '/static-pages',
-        element: <StaticPage />,
-      },
-      {
-        path: '/seo-settings',
-        element: <SeoSetting />,
       },
     ],
   },

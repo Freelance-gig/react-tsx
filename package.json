@@ -9,7 +9,8 @@
     "test": "vitest run",
     "fix:lint": "eslint . --fix",
     "fix:prettify": "prettier --write --ignore-path .gitignore .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint:setup": "husky install"
   },
   "dependencies": {
     "antd": "^5.10.0",
